@@ -1,0 +1,126 @@
+# Envoy DEFAULT Site Params
+# Default site parameters, see "config/production" "config/staging" and "config/local" for environment specific overrides
+
+########################
+# Default site parameters
+
+# GitHub branch (latest release)
+latest_github_branch = "release-0.13"
+# Default version (latest release)
+version = "v0.13"
+########################
+
+# Section labels for versions
+# Current release
+doclabel = "Documentation "
+releaselabel = "Release: "
+# Pre-release
+masterlabel = "Pre-release"
+# section path value ("master" docs directory folder on website)
+masterfolder = "development"
+
+# Footer content
+envoyAuthors = "The Envoy Authors"
+commonsLicense = "CC By 4.0"
+commons_license = "https://creativecommons.org/licenses/by/4.0/"
+apacheLicense = "Apache 2.0"
+apache_license = "https://www.apache.org/licenses/LICENSE-2.0"
+envoyLicense = "Envoy Licensing"
+envoy_license = "https://github.com/envoy/docs/blob/master/LICENSE"
+privacyPolicy = "Privacy Policy"
+privacy_policy = "https://policies.google.com/privacy"
+cookieUsage = "Cookie Usage"
+cookie_usage = "/about-analytics-cookies/"
+
+# GitHub repositories
+github_docsrepo = "https://github.com/envoy/docs"
+github_communityrepo = "https://github.com/envoy/community"
+github_eventingrepo = "https://github.com/envoy/eventing"
+github_servingrepo = "https://github.com/envoy/serving"
+
+# User interface configuration
+[ui]
+# Set to true to display the nav bar in compact state (collapse menu).
+sidebar_menu_compact = true
+#  Set to true to disable breadcrumb navigation.
+breadcrumb_disable = false
+
+[links]
+# End user relevant links. These will show up on left side of footer and in the community page if you have one.
+[[links.user]]
+  name = "Envoy users Group"
+  url = "https://groups.google.com/forum/#!forum/envoy-users"
+  external = "true"
+  icon = "fa fa-users"
+        desc = "Discussion and help from your fellow users"
+[[links.user]]
+  name ="Twitter"
+  url = "https://twitter.com/EnvoyProject"
+  external = "true"
+  icon = "fab fa-twitter"
+        desc = "Follow us on Twitter to get the latest news!"
+[[links.user]]
+  name = "Stack Overflow questions"
+  url = "https://stackoverflow.com/questions/tagged/*envoy*"
+  external = "true"
+  icon = "fab fa-stack-overflow"
+        desc = "Envoy tagged questions and curated answers"
+
+# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+[[links.developer]]
+  name = "Envoy GitHub repo"
+  url = "https://github.com/envoy"
+  external = "true"
+  icon = "fab fa-github"
+        desc = "Development takes place here!"
+[[links.developer]]
+  name = "Envoy Slack channels"
+  url = "https://envoy.slack.com/"
+  external = "true"
+  icon = "fab fa-slack"
+        desc = "Chat with other project developers"
+[[links.developer]]
+  name = "Envoy developers Group"
+  url = "https://groups.google.com/forum/#!forum/envoy-dev"
+  external = "true"
+  icon = "fa fa-users"
+        desc = "Discuss development issues around the project"
+
+# Community page links.
+[[links.usecode]]
+  name = "Community code samples"
+  url = "./samples/"
+  external = "false"
+  icon = "fa fa-code"
+        desc = "Community owned and maintained code samples"
+[[links.usecode]]
+  name = "Eventing"
+  url = "../docs/eventing/samples/"
+  external = "false"
+  icon = "fa fa-code"
+        desc = "Code samples for the Eventing component"
+[[links.usecode]]
+  name = "Serving"
+  url = "../docs/serving/samples/"
+  external = "false"
+  icon = "fa fa-code"
+        desc = "Code samples for the Serving component"
+[[links.usecode]]
+  name = "All"
+  url = "../docs/samples/"
+  external = "false"
+  icon = "fa fa-list"
+  desc = "See a list of all code samples"
+[[links.sharecode]]
+  name = "Contribute code samples"
+  url = "./samples/"
+  external = "false"
+  icon = "fa fa-share"
+        desc = "Share your samples with the community"
+[[links.sharecode]]
+  name = "Link existing code samples"
+  url = "../docs/samples/#external-code-samples"
+  external = "false"
+  icon = "fa fa-link"
+        desc = "Link to your Envoy samples that live on another site"
+

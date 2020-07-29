@@ -1,0 +1,28 @@
+# Envoy Language Configuration
+# All nl configurations are set here.
+# Note: NL source is maintained in the translations branch of the Envoy/docs repo:
+# <TODO Create branch for nls> https://github.com/Envoy/docs/tree/translations) </TODO>
+
+[en]
+  title = "Envoy"
+  description = "Envoy provides a set of components for building modern, source-centric, and container-based applications that can run anywhere."
+  languageName = "English"
+  contentDir = "content/en"
+  # Weight used for sorting.
+  weight = 1
+  time_format_default = "02.01.2006"
+  time_format_blog = "02.01.2006"
+
+# Template/example for additional NLs
+# (where translated source is "content/[LANG]" and config file is "il8n/[LANG].toml")
+#
+# Example: LANG = ja (Japanese):
+#
+[zh]
+  title = "Envoy"
+  description = "Envoy提供一套组件用于构建可以在任何地方运行的现代化，源为中心，基于容器的应用程序。"
+  languageName = "Chinese"
+  contentDir = "content/zh"
+  weight = 2
+  time_format_default = "2020.03.06"
+  time_format_blog = "2020.03.06"
